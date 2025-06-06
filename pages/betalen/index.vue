@@ -11,7 +11,7 @@ const href = computed(
 
 <template>
   <div class="max-w-xs mx-auto">
-    <div class="my-8 flex bg-white border-gray-400 shadow-sm border-1 rounded-md text-2xl/loose overflow-hidden">
+    <div class="my-8 flex bg-white border-gray-400 shadow-sm border-1 rounded-md text-2xl leading-16 overflow-hidden">
       <span v-if="amount > 1" class="flex-2/12 text-center cursor-pointer select-none hover:bg-gray-100 transition-colors" v-on:click="amount -= 1">-</span>
       <span v-else class="flex-3/12"></span>
       <input class="flex-3/12 text-right w-full outline-0" v-model.number="amount" />
