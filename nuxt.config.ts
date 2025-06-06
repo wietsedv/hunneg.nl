@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxt/ui", "@nuxtjs/tailwindcss"],
   app: {
     head: {
-      title: "Hunneg | Groningse Honing uit het Westerkwartier",
+      title: "Hunneg • Groningse Honing uit het Westerkwartier",
       htmlAttrs: {
         lang: "nl",
       },
