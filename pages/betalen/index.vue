@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const amount = ref(1);
-const price = 6;
+const price = 5.5;
 
 const totalPrice = computed(() => amount.value * price);
 const href = computed(
