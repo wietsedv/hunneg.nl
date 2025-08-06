@@ -35,7 +35,7 @@ const href = computed(
       v-if="totalPrice > 0"
       class="block text-center bg-green-600 hover:bg-green-700 shadow-sm transition-all text-white rounded-md py-4 px-1 my-8 font-semibold"
       :href
-      >€ {{ totalPrice }} betalen met iDEAL</a
+      >{{ new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" }).format(totalPrice) }} betalen met iDEAL</a
     >
 
     <div class="text-center my-8">
