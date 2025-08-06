@@ -7,7 +7,7 @@ definePageMeta({
 
 const route = useRoute();
 
-const price = 6;
+const price = 5.5;
 const amount =  Number.parseInt(Array.isArray(route.params.amount) ? route.params.amount[0] : route.params.amount);
 
 const totalPrice = price * amount;
