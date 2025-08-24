@@ -2,8 +2,7 @@
   <div class="min-h-screen body">
     <div class="max-w-xl mx-auto p-4">
       <div class="my-12">
-        <h1 class="text-red-700 font-semibold text-5xl sm:text-7xl text-center my-4">Hunneg</h1>
-        <h2 class="font-semibold text-2xl sm:text-3xl text-center">Groningse Honing</h2>
+         <img src="/assets/logo.svg" alt="Hunneg" class="mx-auto w-80" />
       </div>
 
       <NuxtPage />
