@@ -8,8 +8,8 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "nl",
       },
-      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
       meta: [{ name: "author", content: "Wietse de Vries" }],
     },
-  }
+  },
 });
