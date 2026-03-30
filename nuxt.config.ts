@@ -12,4 +12,9 @@ export default defineNuxtConfig({
       meta: [{ name: "author", content: "Wietse de Vries" }],
     },
   },
+  runtimeConfig: {
+    public: {
+      price: 6,
+    },
+  },
 });

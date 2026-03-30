@@ -1,8 +1,14 @@
 <script setup lang="ts">
 const amount = ref(1);
-const price = 5.5;
+
+const config = useRuntimeConfig();
+const price = config.public.price;
 
 const totalPrice = computed(() => amount.value * price);
+const totalPriceFormatted = computed(() =>
+  new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" }).format(totalPrice.value).replace(",00", ",-")
+);
+
 const href = computed(
   () =>
     `https://bunq.me/hunneg/${totalPrice.value}/${amount.value} ${amount.value === 1 ? "pot" : "potten"} hunneg/ideal`
@@ -35,7 +41,7 @@ const href = computed(
       v-if="totalPrice > 0"
       class="block text-center bg-green-600 hover:bg-green-700 shadow-sm transition-all text-white rounded-md py-4 px-1 my-8 font-semibold"
       :href
-      >{{ new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" }).format(totalPrice) }} betalen met iDEAL</a
+      >{{ totalPriceFormatted }} betalen met iDEAL</a
     >
 
     <div class="text-center my-8">
