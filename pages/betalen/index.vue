@@ -11,7 +11,7 @@ const totalPriceFormatted = computed(() =>
 
 const href = computed(
   () =>
-    `https://bunq.me/hunneg/${totalPrice.value}/${amount.value} ${amount.value === 1 ? "pot" : "potten"} hunneg/ideal`
+    `https://bunq.me/hunneg/?amount=${totalPrice.value}&paymentMethod=IDEAL`
 );
 </script>
 
