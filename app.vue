@@ -10,7 +10,7 @@
       <div class="my-12">
         <div class="text-center font-semibold text-lg my-1">Wietse de Vries</div>
         <div class="text-center text-gray-700 text-sm my-1">NL23 BUNQ 2152 8575 18</div>
-        <div class="text-center text-blue-700 text-sm my-1">
+        <div class="text-center text-blue-700 hover:text-blue-800 text-sm my-1">
           <a href="mailto:hunneg@wietsedv.nl">hunneg@wietsedv.nl</a>
         </div>
       </div>
