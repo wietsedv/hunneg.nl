@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      price: 6,
+      price: 6.5,
     },
   },
 });
